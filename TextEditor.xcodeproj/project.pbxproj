@@ -14,6 +14,10 @@
 		B32F302927AC91CA009B8585 /* TextEditorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F302827AC91CA009B8585 /* TextEditorTests.swift */; };
 		B32F303327AC91CA009B8585 /* TextEditorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F303227AC91CA009B8585 /* TextEditorUITests.swift */; };
 		B32F303527AC91CA009B8585 /* TextEditorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F303427AC91CA009B8585 /* TextEditorUITestsLaunchTests.swift */; };
+		B32F304327AC92C7009B8585 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304227AC92C7009B8585 /* ListView.swift */; };
+		B32F304527AC92EC009B8585 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304427AC92EC009B8585 /* MainView.swift */; };
+		B32F304827AC9422009B8585 /* NavigationDrawerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */; };
+		B32F304A27AC9B7F009B8585 /* NavigationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304927AC9B7F009B8585 /* NavigationActions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		B32F302E27AC91CA009B8585 /* TextEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B32F303227AC91CA009B8585 /* TextEditorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorUITests.swift; sourceTree = "<group>"; };
 		B32F303427AC91CA009B8585 /* TextEditorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextEditorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B32F304227AC92C7009B8585 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B32F304427AC92EC009B8585 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerAction.swift; sourceTree = "<group>"; };
+		B32F304927AC9B7F009B8585 /* NavigationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +103,14 @@
 		B32F301527AC91C7009B8585 /* TextEditor */ = {
 			isa = PBXGroup;
 			children = (
+				B32F304627AC9413009B8585 /* Hashables */,
+				B32F304127AC92BB009B8585 /* Views */,
 				B32F301627AC91C7009B8585 /* TextEditorApp.swift */,
 				B32F301827AC91C7009B8585 /* ContentView.swift */,
 				B32F301A27AC91CA009B8585 /* Assets.xcassets */,
 				B32F301F27AC91CA009B8585 /* TextEditor.entitlements */,
 				B32F301C27AC91CA009B8585 /* Preview Content */,
+				B32F304927AC9B7F009B8585 /* NavigationActions.swift */,
 			);
 			path = TextEditor;
 			sourceTree = "<group>";
@@ -127,6 +138,23 @@
 				B32F303427AC91CA009B8585 /* TextEditorUITestsLaunchTests.swift */,
 			);
 			path = TextEditorUITests;
+			sourceTree = "<group>";
+		};
+		B32F304127AC92BB009B8585 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B32F304227AC92C7009B8585 /* ListView.swift */,
+				B32F304427AC92EC009B8585 /* MainView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B32F304627AC9413009B8585 /* Hashables */ = {
+			isa = PBXGroup;
+			children = (
+				B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */,
+			);
+			path = Hashables;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +288,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				B32F301927AC91C7009B8585 /* ContentView.swift in Sources */,
+				B32F304A27AC9B7F009B8585 /* NavigationActions.swift in Sources */,
+				B32F304527AC92EC009B8585 /* MainView.swift in Sources */,
 				B32F301727AC91C7009B8585 /* TextEditorApp.swift in Sources */,
+				B32F304827AC9422009B8585 /* NavigationDrawerAction.swift in Sources */,
+				B32F304327AC92C7009B8585 /* ListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
