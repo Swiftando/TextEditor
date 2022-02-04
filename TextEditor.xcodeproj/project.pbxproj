@@ -18,6 +18,7 @@
 		B32F304527AC92EC009B8585 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304427AC92EC009B8585 /* MainView.swift */; };
 		B32F304827AC9422009B8585 /* NavigationDrawerAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */; };
 		B32F304A27AC9B7F009B8585 /* NavigationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304927AC9B7F009B8585 /* NavigationActions.swift */; };
+		B32F304D27ACA4DB009B8585 /* ContentHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B32F304C27ACA4DB009B8585 /* ContentHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		B32F304427AC92EC009B8585 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDrawerAction.swift; sourceTree = "<group>"; };
 		B32F304927AC9B7F009B8585 /* NavigationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationActions.swift; sourceTree = "<group>"; };
+		B32F304C27ACA4DB009B8585 /* ContentHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		B32F301527AC91C7009B8585 /* TextEditor */ = {
 			isa = PBXGroup;
 			children = (
+				B32F304B27ACA4C6009B8585 /* Shared */,
 				B32F304627AC9413009B8585 /* Hashables */,
 				B32F304127AC92BB009B8585 /* Views */,
 				B32F301627AC91C7009B8585 /* TextEditorApp.swift */,
@@ -155,6 +158,14 @@
 				B32F304727AC9422009B8585 /* NavigationDrawerAction.swift */,
 			);
 			path = Hashables;
+			sourceTree = "<group>";
+		};
+		B32F304B27ACA4C6009B8585 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B32F304C27ACA4DB009B8585 /* ContentHeader.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -291,6 +302,7 @@
 				B32F304A27AC9B7F009B8585 /* NavigationActions.swift in Sources */,
 				B32F304527AC92EC009B8585 /* MainView.swift in Sources */,
 				B32F301727AC91C7009B8585 /* TextEditorApp.swift in Sources */,
+				B32F304D27ACA4DB009B8585 /* ContentHeader.swift in Sources */,
 				B32F304827AC9422009B8585 /* NavigationDrawerAction.swift in Sources */,
 				B32F304327AC92C7009B8585 /* ListView.swift in Sources */,
 			);
