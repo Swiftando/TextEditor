@@ -9,6 +9,13 @@ import SwiftUI
 
 struct ListView: View {
     
+    @State
+    private var activeNavigationAction: String = NavigationActions[0].title;
+    
+    func onChange(action: NavigationAction) {
+        self.activeNavigationAction = action.title
+    }
+    
     var body: some View {
         VStack (alignment: .leading) {
             Text("My Stuff")
@@ -16,20 +23,29 @@ struct ListView: View {
                 .padding()
             
             ForEach(NavigationActions, id: \.self) { option in
-                HStack {
-                    Image(systemName: option.imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 14)
-                        .foregroundColor(.blue)
-                    Text(option.title)
-                    
-                    Spacer()
+                
+                
+                let isActive: Bool = activeNavigationAction == option.title;
+                
+                    HStack {
+                        
+                        Image(systemName: option.imageName)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 14)
+                            .foregroundColor(isActive ? Color.accentColor : Color.white)
+                        Text(option.title)
+                        
+                        Spacer()
+                    }
+                    .onTapGesture {
+                        onChange(action: option)
+                    }
                 }
                 .padding()
-            }
             Spacer()
         }
+        .background(Color.secondary)
     }
 }
 
